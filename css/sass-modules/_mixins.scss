@@ -1,0 +1,53 @@
+//Sass Mixins
+
+@mixin sm {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: 1520px) {
+    @content;
+  }
+}
+
+@mixin xxxl {
+  @media (min-width: 1650px) {
+    @content;
+  }
+}
+
+@mixin gradient-top {
+  background: linear-gradient(to top, $purple 0%, $accent 100%);
+}
+
+@mixin gradient-def {
+  background: linear-gradient(45deg, $purple 0%, $accent 100%);
+}
+
+@mixin box-shadow {
+  box-shadow: 0px 18px 35px rgba(250, 120, 117, 0.25);
+}
+
+@mixin button-shadow {
+  box-shadow: 0 18px 35px rgba(250, 120, 117, 0.25);
+}
